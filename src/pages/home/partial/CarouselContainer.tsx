@@ -6,9 +6,17 @@ const CarouselContainer = () => {
   return (
     <div className="mt-8 flex flex-col gap-8">
       <Carousel
-        setting={{ swipeToSlide: true, slidesToScroll: 1 }}
+        setting={{
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 500,
+          autoplaySpeed: 1500,
+        }}
         generateKey={(item) => item}
         items={brandCarousel.brand}
+        customArrowClassname="hidden"
       >
         {(item) => (
           <div className="flex items-center justify-center">
@@ -18,7 +26,7 @@ const CarouselContainer = () => {
       </Carousel>
 
       <Carousel
-        setting={{ swipeToSlide: true, slidesToScroll: 1 }}
+        setting={{}}
         generateKey={(item) => item.id + ""}
         items={linkCarousel.link}
       >

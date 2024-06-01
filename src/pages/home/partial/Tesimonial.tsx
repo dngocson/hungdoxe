@@ -75,6 +75,7 @@ const Tesimonial = () => {
             slidesToScroll: 1,
             speed: 250,
             dots: true,
+            infinite: true,
           }}
           generateKey={(item) => item.id + ""}
           customArrowContainerClassname={"w-[98%]"}
@@ -96,7 +97,7 @@ const Tesimonial = () => {
         </Carousel>
       </div>
 
-      <div className="bg-social mt-8 space-y-20 object-center py-20 text-center text-white">
+      <div className="mt-8 space-y-20 bg-social object-center py-20 text-center text-white">
         <h2 className="text-4xl font-bold uppercase text-black">
           BÁO CHÍ NÓI GÌ Về CHUNGAUTO
         </h2>
@@ -108,6 +109,7 @@ const Tesimonial = () => {
             slidesToScroll: 1,
             speed: 250,
             dots: true,
+            infinite: true,
           }}
           generateKey={(item) => item.id + ""}
           customArrowContainerClassname={"w-[98%]"}
