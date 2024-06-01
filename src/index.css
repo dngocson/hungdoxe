@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* the slides */
+.slick-slide {
+  padding: 0 5px;
+  height: inherit !important;
+}
+.slick-slide > div:first-child {
+  height: 100%;
+}
+.slick-track {
+  display: flex !important;
+}
+
+.slick-dots li button::before {
+  margin-top: 10px;
+  font-size: 12px !important;
+  color: white !important;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1100px];
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto.woff2) format("woff2");
+  }
+}
