@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Carousel from "../../../components/_Common/Carousel";
 import { brandCarousel, linkCarousel } from "../../../constants/mockData";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const CarouselContainer = () => {
   return (
@@ -19,24 +20,31 @@ const CarouselContainer = () => {
         customArrowClassname="hidden"
       >
         {(item) => (
-          <div className="flex items-center justify-center">
-            <img className="border border-primary" src={item} />
+          <div className="ml-[-5px] flex items-center justify-center px-[5px]">
+            <img className="border border-primary px-[1px]" src={item} />
           </div>
         )}
       </Carousel>
 
       <Carousel
-        setting={{}}
         generateKey={(item) => item.id + ""}
+        customArrowContainerClassname={"w-[105%]"}
+        customArrowClassname={
+          "p-1 rounded-full bg-error text-white font-bold text-xl text-center"
+        }
+        leftArrowIcon={<IoIosArrowBack />}
+        rightArrowIcon={<IoIosArrowForward />}
         items={linkCarousel.link}
       >
         {(item) => (
-          <Link
-            className="block w-full border border-primary p-2.5 "
-            to={item.path}
-          >
-            {item.label}
-          </Link>
+          <div className="ml-[-5px] px-[5px]">
+            <Link
+              className="block w-full border border-primary p-2.5 "
+              to={item.path}
+            >
+              {item.label}
+            </Link>
+          </div>
         )}
       </Carousel>
     </div>

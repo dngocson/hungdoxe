@@ -50,7 +50,7 @@ const Section = ({
       <Carousel
         setting={{ slidesToShow: 4, swipeToSlide: true, slidesToScroll: 1 }}
         generateKey={(item) => item.id + ""}
-        customArrowContainerClassname={"w-[102%]"}
+        customArrowContainerClassname={"w-[103.5%]"}
         customArrowClassname={
           "p-1 rounded-full text-3xl bg-neutral border shadow-[5px_5px_5px_rgba(0,0,0,0.5)] hover:bg-transparent hover:shadow-none"
         }

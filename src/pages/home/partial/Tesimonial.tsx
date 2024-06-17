@@ -61,7 +61,7 @@ const SocialInfo = [
 const Tesimonial = () => {
   return (
     <div>
-      <div className="mt-8 space-y-7 bg-testimonial object-fill py-20 text-center text-white">
+      <div className="mt-8 space-y-7 bg-testimonial object-fill px-1 py-20 text-center text-white">
         <h2 className="text-4xl uppercase ">phản hồi khách hàng</h2>
         <p>
           Sản phẩm của ChungAuto được tin tưởng bởi nhiều khách hàng, trong đó

@@ -41,7 +41,7 @@ const Carousel = <T,>({
 
   const settings = {
     autoplay: false,
-    centerPadding: "5px",
+    centerPadding: "0px",
     centerMode: true,
     arrows: false,
     slidesToShow: 5,
